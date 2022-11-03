@@ -1,8 +1,13 @@
-
+import { Route, Routes } from "react-router-dom";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 function App() {
-  return (
-    <h1>Welcome to shepherd</h1>
-  );
+	return (
+		<Routes>
+			<Route path="/login" element={<SignIn />} />
+			<Route path="/signup" element={<SignUp />} />
+		</Routes>
+	);
 }
 
 export default App;
